@@ -16,7 +16,7 @@ void setup(){
   fill(255,0,0);
   circle(0,0,10);
   frameRate(30);
-  noSmooth();
+  //noSmooth();
   setupObstacles();
   xR = width/2;
   yR = height/2;
@@ -28,7 +28,5 @@ void draw(){
   drawRobot();
   drawObstacles();
   drawDestination();
-  if(arrive == false){
-    avancer(xDesti,yDesti);
-  }
+  avancer(xDesti,yDesti);
 }

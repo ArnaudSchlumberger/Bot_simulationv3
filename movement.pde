@@ -7,7 +7,11 @@ void avancer(float x, float y){
     if(arrive == false){  
       xR=xR+sin(deg)*v;
       yR=yR-cos(deg)*v;
-      collision();
+      if(coll()==1)
+      {
+        xR=xR-sin(deg)*v;
+        yR=yR+cos(deg)*v;
+      }
     }
   }
 }
